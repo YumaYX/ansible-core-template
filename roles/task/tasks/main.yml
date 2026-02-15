@@ -1,6 +1,6 @@
 ---
 # tasks file for roles/task
-- name: 複数ディレクトリを作成
+- name: Create Multiple Directories
   ansible.builtin.file:
     path: "{{ item }}"
     state: directory
@@ -8,4 +8,3 @@
     - /tmp/1
     - /tmp/2
     - /tmp/3
-
